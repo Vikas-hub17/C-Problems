@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+void calculate( int amt){
+   int numof_hundred = amt/100;
+   cout<<"Number of 100 notes:" << numof_hundred<<endl;
+   amt = amt - numof_hundred*100;
+   int numof_fifty = amt/50;
+   cout<<"Number of 50 notes:" << numof_fifty<<endl;
+   amt = amt - numof_fifty*50;
+   int numof_twenty = amt/20;
+   cout<<"Number of 20 notes:" << numof_twenty<<endl;
+   amt = amt - numof_twenty*20;
+   int numof_one = amt/1;
+   cout<<"Number of 1notes:" << numof_one;
+   amt = amt - numof_one*1;
+}
+
+
+int main() {
+  
+  int x;
+  cin>>x;
+  calculate(x);
+  }
