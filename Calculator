@@ -1,0 +1,44 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+
+void calculate(int x,int y, char symbol){
+    switch(symbol){
+        case '+':
+        cout<<x+y<<endl;
+        break;
+
+        case '-':
+        cout<<x-y<<endl;
+        break;
+
+        case '*':
+        cout<<x*y<<endl;
+        break;
+
+        case '/':
+        cout<<x/y<<endl;
+        break;
+
+        case '^':
+        cout<<pow(x,y)<<endl;
+        break;
+    }
+     
+}
+
+
+
+
+int main(){
+    int a,b;
+    char ope;
+    cout<<"Enter first number:";
+    cin>>a;
+    cout<<"Enter the operator:";
+    cin>>ope;
+    cout<<"Enter second number:";
+    cin>>b;
+    calculate(a,b,ope);
+}
