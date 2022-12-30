@@ -1,0 +1,27 @@
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+void Max_Min(int array[], int n){
+    int Max=-999999;
+    int Min=100000;
+    for(int i=0;i<n;i++){
+        Max=max(Max,array[i]);
+        Min=min(Min,array[i]);
+    }
+    cout<<"Maximum number is:" << Max << endl;
+    cout<<"Minimum number is:" << Min;
+}
+
+int main(){
+    
+    int n;
+    cin>>n;
+    int array[1000];
+    for(int i=0;i<n;i++){
+        cin>>array[i];
+    }
+    Max_Min(array, n);
+    return 0;
+}
