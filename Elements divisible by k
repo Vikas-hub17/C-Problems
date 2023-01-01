@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int Count(int array[], int n, int k){
+    int count=0;
+    for(int i=0;i<n;i++){
+        if(array[i]%k==0){
+            count++;
+        }
+    }
+    cout<< count <<endl;
+ 
+}
+
+
+int main()
+{
+    int n,k,arr[n];
+    cin>>n>>k;
+    cout<< "Enter elements for array:" << endl;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    Count(arr, n, k);
+    return 0;
+}
