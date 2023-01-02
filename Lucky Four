@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+void Count_four(int n){
+    int count;
+    int four=0;
+    while(n>0){
+        count=n%10;
+        if(count==4){
+            four++;
+        }
+        n=n/10;
+    }
+    cout<< four <<endl;
+}
+
+
+
+
+int main(){
+    
+    int t,n;
+    cin>>t;
+    for(int i=0;i<t;i++){
+        cin>>n;
+        Count_four(n);
+    }
+    return 0;
+}
+
