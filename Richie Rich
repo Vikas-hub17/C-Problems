@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    int A,B,X,T;
+	cin>>t;
+	for(int i=0;i<t;i++){
+	    cin>>A>>B>>X;
+	     int Diff = B-A;
+	    T = Diff/X;
+	    cout << T << endl;
+	}
+	return 0;
+}
